@@ -16,7 +16,7 @@ const todoList = [
 ];
 
 function App() {
-  const [todos, setTodos] = useState([todoList]);
+  const [todos, setTodos] = useState(todoList);
 
   return (
     <div className="container">
