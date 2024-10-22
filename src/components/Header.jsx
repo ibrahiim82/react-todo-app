@@ -15,6 +15,7 @@ const Header = ({ todos, setTodos }) => {
     setTodos([...todos, newTodo]);
     setTask("");
   };
+
   return (
     <div>
       <h1 className="text-center text-danger m-5">Todo App</h1>
