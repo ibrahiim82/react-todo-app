@@ -1,8 +1,11 @@
 import React from "react";
 import { ListGroup } from "react-bootstrap";
 
-const TodoList = ({ todos }) => {
-  const deleteTodo = (id) => {};
+const TodoList = ({ todos, setTodos }) => {
+  const deleteTodo = (id) => {
+    const newTodos = todos.filter(item => item.id !== id)
+    setTodos(newTodos)
+  };
 
   return (
     <div>
@@ -19,6 +22,7 @@ const TodoList = ({ todos }) => {
               width="24"
               height="24"
               fill="red"
+              role="button"
               onClick={() => deleteTodo(item.id)}
               className="bi bi-trash-fill"
               viewBox="0 0 16 16"
