@@ -21,7 +21,7 @@ const TodoList = ({ todos, setTodos }) => {
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
-              fill="green"
+              fill="red"
               role="button"
               onClick={() => deleteTodo(item.id)}
               className="bi bi-trash-fill"
