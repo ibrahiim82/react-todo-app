@@ -28,7 +28,7 @@ const Header = ({ todos, setTodos }) => {
           onChange={(e) => setTask(e.target.value)}
         />
         <Button
-          className="input-group-text bg-success"
+          className="input-group-text bg-primary"
           disabled={!task.trim()}
           id="basic-addon2"
           onClick={addTodo}
