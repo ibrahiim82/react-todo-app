@@ -3,8 +3,8 @@ import { ListGroup } from "react-bootstrap";
 
 const TodoList = ({ todos, setTodos }) => {
   const deleteTodo = (id) => {
-    const newTodos = todos.filter(item => item.id !== id)
-    setTodos(newTodos)
+    const newTodos = todos.filter((item) => item.id !== id);
+    setTodos(newTodos);
   };
 
   return (
